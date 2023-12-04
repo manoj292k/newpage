@@ -126,9 +126,7 @@ pre{
     height: auto;
     display: flex;
    }
-   .abt-img img{
-    width: 100%;
-   }
+   
   .abt-txt{
     color: white;
     text-align: justify;
@@ -260,6 +258,9 @@ pre{
     border-radius: 30px;
     background:radial-gradient( rgba(255, 255, 255, 0.164)  ,rgb(0, 0, 0) );
   }
+    .abt-img img{
+    width: 100%;
+}
   .abt-txt{
     padding: 20px 0px 0px 30px;
     color: white;
