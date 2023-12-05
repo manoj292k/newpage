@@ -3,12 +3,14 @@
 *{
     margin: 0px;
     padding: 0px;
-    
+    font-family: 'Cinzel', serif;
+    font-family: 'Hedvig Letters Sans', sans-serif;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'PT Serif', serif;
     scroll-behavior: smooth;
 }
 body{
-    font-family: 'Hedvig Letters Sans', sans-serif;
-    font-family: 'Kanit', sans-serif;
+    
     margin: 0px;
     padding: 0px;
     background: #000;
@@ -109,15 +111,20 @@ pre{
   .Title{
     color: red;
     background: #000;
-    font-size: xx-large;
+    font-size: 45px;
+    padding: 50px 0px;
     text-align: center;
+    font-family: 'Cinzel', serif;
+    font-family: 'Hedvig Letters Sans', sans-serif;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'PT Serif', serif;
   }
   .about{
     width: 100%;
     height: auto;
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     background-color: #000;
     
   }
@@ -125,19 +132,29 @@ pre{
     width: 40%;
     height: auto;
     display: flex;
+    justify-content: center;
    }
-   
+   .abt-img img{
+    width: 50%;
+   }
   .abt-txt{
     color: white;
-    text-align: justify;
-    width: 50%;
+
+    display: flex;
+    width: 40%;
     font-size: large;
-    padding: 10px 0px;
-    align-items: center;
+    padding: 30px 30px;
+    border-radius: 10px;
+    justify-content: space-around;
+
+    box-shadow: 0px 2px 6px rgba(255, 255, 255, 0.486);
+    font-family: 'Hedvig Letters Sans', sans-serif;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'PT Serif', serif;
   }
   .Education{
     width: 100%;
-    height: auto;
+    height: 90vh;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -145,41 +162,331 @@ pre{
     
   }
   .edu-txt{
-    width: 55%;
+    width: 60%;
     display: flex;
     color: white;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    padding: 20px 0px;
+    padding: 0px 0px;
   }
   .edu-out{
-    width: 80%;
+    width: 100%;
     display: flex;
     justify-content: center;
   }
   .icon-div{
     width: 25%;
-    height: 40%;
+    height: 50%;
     text-align: center;
     
   }
+  .edu-img{
+
+  height: 80%;
+  }
+  .edu-divimg{
+    width: 50%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    border: 1px solid white;
+
+  }
   .ist-div{
-    width: 80%;
-    height: 50%;
+    width: 90%;
+    height: 55%;
     background:rgb(255, 0, 0);
     border-radius: 10px;
-    padding: 5px;
-    box-shadow: 0px 0px 10px 0px  rgba(255, 255, 255, 0.411);
+    padding-left: 40px;
+    align-items: center;
+    font-size: x-large;
+    font-family: 'Cinzel', serif;
+    font-family: 'Hedvig Letters Sans', sans-serif;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'PT Serif', serif;
+    box-shadow: 0px 0px 10px   rgba(252, 252, 252, 0.521);
     
   }
+.skill-Title{
+    color:white;
+    background-color: #312631;
+    font-size: 45px;
+    padding: 50px 0px;
+    text-align: center;
+    font-family: 'Cinzel', serif;
+    font-family: 'Hedvig Letters Sans', sans-serif;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'PT Serif', serif;
+
+}
+
   .Outerarea{
-    background-color: #000;
+    background-color: #312631;
     width: 100%;
     height: auto;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
   }
+.skillsname{
+    display: flex;
+    width: 20%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 80px 0px;
+}
+.skills-txt{
+    width: 80%;
+    height: 20%;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    font-size: x-large;
+    color: white;
+}
+.skill-img{
+    padding: 50px 0px;
+    width: 35%;
+    align-items: center;
+}
+.skills-notes{
+    width: 80%;
+
+    color: white;
+    text-align: center;
+    font-size: x-large;
+    padding: 20px 0px;
+}
+
+.project-out{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #000;
+}
+
+.card-body,.card-text{
+    background: #000;
+    color: white;
+}
+.card-title{
+    color: orangered;
+}
+.pro-box{
+    width: 100%;
+    height: 80vh;
+    background-color: #000;
+    padding: 50px 0px;
+}
+.contact {
+    background: #000000;
+    min-height: 70vh;
+  }
+
+  .heading{
+    text-align: center;
+    color: gold;
+    padding: 30xp 0px;
+    font-weight: bold;
+    font-size: 50px;
+  }
+  .contact .container {
+
+    width: 100%;
+    height: 88%;
+    background: #000000;
+    border-radius: 1.5rem;
+    align-items: center;
+    box-shadow: 0 0px 10px rgba(248, 236, 236, 0.534);
+
+ 
+  }
+  .contact .container .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2.5rem 2.5rem;
+  }
+  .contact .content .image-box {
+    max-width: 60%;
+    margin-left: 4rem;
+  }
+  .contact .content .image-box img {
+    width: 100%;
+    height: 35rem;
+    position: relative;
+  }
+  .contact .content form {
+    width: 45%;
+    margin-right: 3.5rem;
+  }
+  form .form-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .form-group .field {
+    height: 50px;
+    display: flex;
+    position: relative;
+    margin: 1rem;
+    width: 100%;
+  }
+  form i {
+    position: absolute;
+    top: 50%;
+    left: 18px;
+    color: rgb(51, 51, 51);
+    font-size: 17px;
+    pointer-events: none;
+    transform: translateY(-50%);
+  }
+  form .field input,
+  form .message textarea {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    padding: 0 16px 0 48px;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    border-radius: 5px;
+    border: 1px solid rgb(51, 51, 51);
+    background: #e5ecfb;
+  }
+  .field input::placeholder,
+  .message textarea::placeholder {
+    color: rgb(51, 51, 51);
+  }
+  .field input:focus,
+  .message textarea:focus {
+    padding-left: 47px;
+    border: 2px solid rgb(115, 3, 167);
+  }
+  .field input:focus ~ i,
+  .message textarea:focus ~ i {
+    color: rgb(115, 3, 167);
+  }
+  form .message {
+    position: relative;
+    margin: 1rem;
+    width: 100%;
+  }
+  form .message i {
+    top: 25px;
+    font-size: 20px;
+    left: 15px;
+  }
+  form .message textarea {
+    min-height: 130px;
+    max-height: 200px;
+    max-width: 100%;
+    min-width: 100%;
+    padding: 12px 20px 0 48px;
+  }
+  form .message textarea::-webkit-scrollbar {
+    width: 0px;
+  }
+  form .button-area {
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+  }
+  .button-area button {
+    color: #fff;
+    border: none;
+    outline: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 5px 20px;
+    background: #2506ad;
+    box-shadow: 0px 5px 10px rgba(48, 68, 247, 0.6);
+    transition: 0.3s ease;
+  }
+  .button-area button:hover {
+    background: #421cecf5;
+  }
+  .button-area span {
+    font-size: 17px;
+    padding: 1rem;
+    display: none;
+  }
+  .button-area button i {
+    position: relative;
+    top: 6px;
+    left: 2px;
+    font-size: 1.5rem;
+    transition: 0.3s;
+    color: #fff;
+  }
+  .button-area button:hover i {
+    left: 8px;
+  }
+  .socilmedia{
+    width: 100%;
+    height: 30vh;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .scl-one a{
+    text-decoration: none;
+    color: white;
+  }
+  .scl-one{
+    width: 30%;
+    height: auto;
+    background-color:black;
+    align-items: center;
+    border-radius: 7px;
+    justify-content: space-around;
+    display: flex;
+
+  }
+  .scl-two{
+    width: 40%;
+    height: 30%;
+    background-color:black;
+    align-items: center;
+    border-radius: 7px;
+    justify-content: space-around;
+    display: flex;
+  }
+  .sl-link{
+
+    padding: 10px;
+   border-radius: 50%;
+  }
+  .sl-link:hover{
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.616) ;
+
+  }
+  .follow{
+    background: #000;
+    color: red;
+    text-align: center;
+    font: bold;
+    font-size: x-large;
+  }
+ .final{
+    width: 100%;
+    text-align: center;
+    color: rgb(0, 255, 221);
+    background-color: rgb(0, 0, 0);
+ }
+
+
+
+
+
+
+
+
 
 @media only screen and (max-width : 600px) {
     
@@ -249,16 +556,16 @@ pre{
     justify-content: space-around;
     flex-wrap: wrap;
     background-color: #000;
-    gap: 50px;
+    gap: 30px;
     
   }
    .abt-img{
-    width: 50%;
+    width: 70%;
     height: auto;
-    border-radius: 30px;
-    background:radial-gradient( rgba(255, 255, 255, 0.164)  ,rgb(0, 0, 0) );
-  }
-    .abt-img img{
+    
+    
+}
+.abt-img img{
     width: 100%;
 }
   .abt-txt{
@@ -288,6 +595,7 @@ pre{
     display: flex;
     flex-wrap:wrap ;
     justify-content: space-around;
+    font-weight: bold;
    
   }
   .edu-out{
@@ -311,4 +619,21 @@ pre{
     box-shadow: 0px 0px 10px 0px  rgba(255, 255, 255, 0.411);
     
   }
+  .contact {
+    min-height: 70vh;
+  }
+  .contact .container {
+    margin: 3rem 0 2rem 0;
+  }
+  .contact .container .content {
+    padding: 18px 12px;
+  }
+  .contact .content .image-box {
+    display: none;
+  }
+  .contact .content form {
+    width: 100%;
+    margin-right: 2rem;
+  }
+
 }
