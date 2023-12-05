@@ -13,7 +13,7 @@ body{
     
     margin: 0px;
     padding: 0px;
-    background: #000;
+    background: #ffffff;
 }
 .outer{
     width: 100%;
@@ -85,6 +85,14 @@ pre span{
     display: flex;
     gap: 20px;
 }
+.homebtnn button{
+  cursor: pointer;
+    border-radius: 5px;
+    padding: 5px 20px;
+    background: #2506ad;
+    box-shadow: 0px 5px 10px rgba(48, 68, 247, 0.6);
+    transition: 0.3s ease;
+}
 
 pre{
     transform: translate(-20%,20%);
@@ -110,7 +118,7 @@ pre{
 
   .Title{
     color: red;
-    background: #000;
+    background: #fff;
     font-size: 45px;
     padding: 50px 0px;
     text-align: center;
@@ -121,97 +129,110 @@ pre{
   }
   .about{
     width: 100%;
-    height: auto;
+    height: 80vh;
     display: flex;
     justify-content: space-around;
-    flex-wrap: nowrap;
-    background-color: #000;
+    flex-wrap: wrap;
+    background-color: #fff;
     
   }
-  .abt-img, .abt-img{
-    width: 40%;
-    height: auto;
+  .abt-img{
+    width: 30%;
+    height: 70%;
     display: flex;
-    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid white;
+    
    }
    .abt-img img{
-    width: 50%;
+    width: 100%;
    }
-  .abt-txt{
-    color: white;
 
+  .abt-txt{
+    color: rgb(0, 0, 39);
+    background-color: #ffff;
     display: flex;
     width: 40%;
+    height: 70%;
     font-size: large;
-    padding: 30px 30px;
+    align-items: center;
     border-radius: 10px;
     justify-content: space-around;
 
-    box-shadow: 0px 2px 6px rgba(255, 255, 255, 0.486);
+    box-shadow: 4px 4px 6px  rgba(255, 255, 255, 0.486);
     font-family: 'Hedvig Letters Sans', sans-serif;
     font-family: 'Kanit', sans-serif;
     font-family: 'PT Serif', serif;
   }
   .Education{
     width: 100%;
-    height: 90vh;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    background-color: #000;
-    
-  }
-  .edu-txt{
-    width: 60%;
-    display: flex;
-    color: white;
+    height: 100vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    padding: 0px 0px;
-  }
-  .edu-out{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
-  .icon-div{
-    width: 25%;
-    height: 50%;
-    text-align: center;
-    
-  }
-  .edu-img{
-
-  height: 80%;
-  }
-  .edu-divimg{
-    width: 50%;
-    background-color: #fff;
-    display: flex;
-    justify-content: center;
-    border: 1px solid white;
-
-  }
-  .ist-div{
-    width: 90%;
-    height: 55%;
-    background:rgb(255, 0, 0);
-    border-radius: 10px;
-    padding-left: 40px;
+    background-color: blueviolet;
     align-items: center;
-    font-size: x-large;
-    font-family: 'Cinzel', serif;
-    font-family: 'Hedvig Letters Sans', sans-serif;
-    font-family: 'Kanit', sans-serif;
-    font-family: 'PT Serif', serif;
-    box-shadow: 0px 0px 10px   rgba(252, 252, 252, 0.521);
     
   }
+  .edu-one{
+    width: 60%;
+    height: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border-radius: 20px;
+    align-items: center;
+  }
+  .edu-two{
+    width: 25%;
+    height: 80%;
+    overflow: hidden;
+    align-items: center;
+
+  }
+  .edu-two img{
+    width: 100%;
+    margin-top: 20%;
+    height: auto;
+  }
+.edu-txt{
+  width: 100%;
+  height: auto;
+  background-color: rgb(84, 26, 141);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 10px;
+  padding: 10px 0px;
+  color: white;
+  font-weight: bold;
+}
+.icon-div{
+  width: 10%;
+  height: 30%;
+  align-items: center;
+  text-align: center;
+
+}
+.Ins-div{
+  width: 80%;
+  height: 30%;
+  padding: 8px;
+  border-radius: 10px;
+  display: flex;
+  border: 1px solid white;
+  background-color: #ffffff;
+  color: rgb(2, 2, 51);
+
+}
+
 .skill-Title{
-    color:white;
-    background-color: #312631;
+    color:rgb(255, 0, 0);
+    background-color: #fff;
     font-size: 45px;
+    font-weight: bold;
     padding: 50px 0px;
     text-align: center;
     font-family: 'Cinzel', serif;
@@ -222,7 +243,7 @@ pre{
 }
 
   .Outerarea{
-    background-color: #312631;
+    background-color: #fff;
     width: 100%;
     height: auto;
     display: flex;
@@ -234,62 +255,100 @@ pre{
     width: 20%;
     flex-wrap: wrap;
     justify-content: space-around;
-    padding: 80px 0px;
+    
 }
 .skills-txt{
     width: 80%;
     height: 20%;
     font-weight: bold;
-    text-align: center;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     font-size: x-large;
-    color: white;
+    color: rgb(0, 0, 0);
+    align-items: center;
+    border-radius: 20px;
+    background: rgb(64, 64, 231);
 }
 .skill-img{
     padding: 50px 0px;
     width: 35%;
     align-items: center;
 }
+.skill-img img{
+  margin-left: 10%;
+}
 .skills-notes{
     width: 80%;
 
-    color: white;
+    color: rgb(0, 0, 0);
     text-align: center;
     font-size: x-large;
     padding: 20px 0px;
 }
+.btn-link{
+    color: #fff;
+    border: none;
+    outline: none;
+    font-size: x-large;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 5px 20px;
+    background: rgb(2, 2, 75);
+    box-shadow: 0px 5px 10px rgba(48, 68, 247, 0.6);
+    transition: 0.3s ease;
+}
 
 .project-out{
     width: 100%;
-    height: auto;
+    height: 100vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    background-color: #000;
+    background-color: rgb(2, 2, 75);
+    align-items: center;
+}
+.cards{
+  width: 300px;
+  height: 80%;
 }
 
 .card-body,.card-text{
-    background: #000;
-    color: white;
+    background: rgb(255, 255, 255);
+    color: black;
+    height: 40%;
+    border-radius: 10px;
 }
+
 .card-title{
     color: orangered;
 }
 .pro-box{
     width: 100%;
-    height: 80vh;
-    background-color: #000;
-    padding: 50px 0px;
+    height: 100vh;
+    background-color: darkblue;
+    border-radius: 20px;
+}
+.btn-primary{
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 5px 20px;
+  background: rgb(0, 0, 0);
+  box-shadow: 0px 0px 10px ;
+  transition: 0.3s ease;
+  color: white;
+  text-decoration: none;
+  margin-left: 30px;
 }
 .contact {
-    background: #000000;
-    min-height: 70vh;
+    background: white;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
   }
 
   .heading{
     text-align: center;
-    color: gold;
+    color: rgb(1, 1, 97);
     padding: 30xp 0px;
     font-weight: bold;
     font-size: 50px;
@@ -297,8 +356,8 @@ pre{
   .contact .container {
 
     width: 100%;
-    height: 88%;
-    background: #000000;
+    height: 100vh;
+    background: blueviolet;
     border-radius: 1.5rem;
     align-items: center;
     box-shadow: 0 0px 10px rgba(248, 236, 236, 0.534);
@@ -319,6 +378,7 @@ pre{
     width: 100%;
     height: 35rem;
     position: relative;
+    overflow: hidden;
   }
   .contact .content form {
     width: 45%;
@@ -429,19 +489,19 @@ pre{
   .socilmedia{
     width: 100%;
     height: 30vh;
-    background-color: rgb(0, 0, 0);
+    background-color: white;
     display: flex;
     align-items: center;
     justify-content: space-around;
   }
   .scl-one a{
     text-decoration: none;
-    color: white;
+    color: rgb(1, 1, 54);
   }
   .scl-one{
     width: 30%;
     height: auto;
-    background-color:black;
+    background-color:white;
     align-items: center;
     border-radius: 7px;
     justify-content: space-around;
@@ -451,7 +511,7 @@ pre{
   .scl-two{
     width: 40%;
     height: 30%;
-    background-color:black;
+    background-color:white;
     align-items: center;
     border-radius: 7px;
     justify-content: space-around;
@@ -463,11 +523,11 @@ pre{
    border-radius: 50%;
   }
   .sl-link:hover{
-    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.616) ;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.616) ;
 
   }
   .follow{
-    background: #000;
+    background: #fcfcfc;
     color: red;
     text-align: center;
     font: bold;
@@ -477,7 +537,7 @@ pre{
     width: 100%;
     text-align: center;
     color: rgb(0, 255, 221);
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
  }
 
 
