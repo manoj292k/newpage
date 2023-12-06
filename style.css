@@ -23,21 +23,28 @@ body{
 }
 .navigation{
     width: 100%;
-    height: auto;
+    height: 50px;
     position: fixed;
     display: flex;
     justify-content: flex-end;
     background-color: rgba(0, 0, 0, 0.671);
-
     gap: 40px;
-    
     z-index: 1;
 }
 li a{
     color: white;
-    padding: 5px 0px;
+    padding: 5px 10px;
+    font-size: x-large;
 }
 
+li :hover{
+  background-color: rgb(255, 255, 255);
+  color: black;
+  border-radius: 10px;
+  box-shadow: 0px 0px 8px white;
+  transition: ease-out 0.4s;
+
+}
 .navitem{
     list-style: none;
     padding: 5px 0px;
@@ -119,6 +126,7 @@ pre{
   .Title{
     color: red;
     background: #fff;
+    font-weight: bold;
     font-size: 45px;
     padding: 50px 0px;
     text-align: center;
@@ -165,6 +173,17 @@ pre{
     font-family: 'Kanit', sans-serif;
     font-family: 'PT Serif', serif;
   }
+  .ETitle{
+    color: white;
+    background: blueviolet;
+    font-size: 45px;
+    padding: 50px 0px;
+    text-align: center;
+    font-family: 'Cinzel', serif;
+    font-family: 'Hedvig Letters Sans', sans-serif;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'PT Serif', serif;
+  }
   .Education{
     width: 100%;
     height: 100vh;
@@ -185,7 +204,7 @@ pre{
     align-items: center;
   }
   .edu-two{
-    width: 25%;
+    width: 30%;
     height: 80%;
     overflow: hidden;
     align-items: center;
@@ -199,7 +218,7 @@ pre{
 .edu-txt{
   width: 100%;
   height: auto;
-  background-color: rgb(84, 26, 141);
+  background-color: rgb(218, 218, 218);
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -209,19 +228,27 @@ pre{
   color: white;
   font-weight: bold;
 }
+.edu-txt:hover,.skillsname :hover{
+  box-shadow: 0px 5px 15px rgb(0, 0, 0);
+  transition: ease-out 0.4s;
+
+}
 .icon-div{
   width: 10%;
   height: 30%;
   align-items: center;
   text-align: center;
+  color: red;
 
+}
+.Ins-div span{
+  font-size: x-large;
 }
 .Ins-div{
   width: 80%;
   height: 30%;
   padding: 8px;
   border-radius: 10px;
-  display: flex;
   border: 1px solid white;
   background-color: #ffffff;
   color: rgb(2, 2, 51);
@@ -264,10 +291,10 @@ pre{
     display: flex;
     justify-content: space-evenly;
     font-size: x-large;
-    color: rgb(0, 0, 0);
+    color: #fff;
     align-items: center;
     border-radius: 20px;
-    background: rgb(64, 64, 231);
+    background: blueviolet;
 }
 .skill-img{
     padding: 50px 0px;
@@ -300,23 +327,39 @@ pre{
 
 .project-out{
     width: 100%;
-    height: 100vh;
+    height: 100%;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    gap: 20px;
     background-color: rgb(2, 2, 75);
     align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 .cards{
-  width: 300px;
-  height: 80%;
-}
+  width: 20%;
+  height: 60%;
+  justify-content: space-around;
+  border: 2px solid black;
+  background-color: #e5ecfb;
+  border-radius: 10px;
 
-.card-body,.card-text{
-    background: rgb(255, 255, 255);
-    color: black;
-    height: 40%;
-    border-radius: 10px;
+}
+.pro-btn{
+  padding: 5px 10px;
+  font-size: x-large;
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+}
+.pro-btn:hover{
+  box-shadow: 0px 0px 8px white;
+  transition: ease-out 0.4s;
+
+}
+.card-text{
+  padding: 0px 5px;
+  text-align: justify;
 }
 
 .card-title{
@@ -327,6 +370,15 @@ pre{
     height: 100vh;
     background-color: darkblue;
     border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.probtn-div{
+  width: 20%;
+  height: auto;
+  text-align: center;
 }
 .btn-primary{
   cursor: pointer;
@@ -337,7 +389,7 @@ pre{
   transition: 0.3s ease;
   color: white;
   text-decoration: none;
-  margin-left: 30px;
+  margin-left: 25px;
 }
 .contact {
     background: white;
@@ -356,7 +408,7 @@ pre{
   .contact .container {
 
     width: 100%;
-    height: 100vh;
+    height: 90%;
     background: blueviolet;
     border-radius: 1.5rem;
     align-items: center;
@@ -497,14 +549,15 @@ pre{
   .scl-one a{
     text-decoration: none;
     color: rgb(1, 1, 54);
+    font-size: x-large;
   }
   .scl-one{
-    width: 30%;
+    width: 35%;
     height: auto;
     background-color:white;
-    align-items: center;
     border-radius: 7px;
-    justify-content: space-around;
+  justify-content: space-around;
+  text-align: center;
     display: flex;
 
   }
@@ -532,11 +585,13 @@ pre{
     text-align: center;
     font: bold;
     font-size: x-large;
+    font-weight: bold;
+    padding-top: 10px ;
   }
  .final{
     width: 100%;
     text-align: center;
-    color: rgb(0, 255, 221);
+    color: rgb(0, 0, 0);
     background-color: rgb(255, 255, 255);
  }
 
