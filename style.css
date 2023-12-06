@@ -23,7 +23,7 @@ body{
 }
 .navigation{
     width: 100%;
-    height: 50px;
+    height: 45px;
     position: fixed;
     display: flex;
     justify-content: flex-end;
@@ -34,7 +34,7 @@ body{
 li a{
     color: white;
     padding: 5px 10px;
-    font-size: x-large;
+    font-size: large;
 }
 
 li :hover{
@@ -290,7 +290,7 @@ pre{
     font-weight: bold;
     display: flex;
     justify-content: space-evenly;
-    font-size: x-large;
+    font-size: large;
     color: #fff;
     align-items: center;
     border-radius: 20px;
@@ -337,7 +337,7 @@ pre{
 }
 .cards{
   width: 20%;
-  height: 60%;
+  height: 70%;
   justify-content: space-around;
   border: 2px solid black;
   background-color: #e5ecfb;
@@ -358,8 +358,11 @@ pre{
 
 }
 .card-text{
-  padding: 0px 5px;
+  padding: 0px 0px;
+  font-size: medium;
+  line-height: 20px;
   text-align: justify;
+  padding: 5px 5px;
 }
 
 .card-title{
@@ -376,7 +379,7 @@ pre{
     align-items: center;
 }
 .probtn-div{
-  width: 20%;
+  width: 40%;
   height: auto;
   text-align: center;
 }
@@ -403,7 +406,7 @@ pre{
     color: rgb(1, 1, 97);
     padding: 30xp 0px;
     font-weight: bold;
-    font-size: 50px;
+    font-size: 30px;
   }
   .contact .container {
 
@@ -428,7 +431,7 @@ pre{
   }
   .contact .content .image-box img {
     width: 100%;
-    height: 35rem;
+    height: 30rem;
     position: relative;
     overflow: hidden;
   }
@@ -531,7 +534,7 @@ pre{
     position: relative;
     top: 6px;
     left: 2px;
-    font-size: 1.5rem;
+    font-size: large;
     transition: 0.3s;
     color: #fff;
   }
@@ -549,7 +552,7 @@ pre{
   .scl-one a{
     text-decoration: none;
     color: rgb(1, 1, 54);
-    font-size: x-large;
+    font-size: large;
   }
   .scl-one{
     width: 35%;
