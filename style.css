@@ -7,6 +7,7 @@
     font-family: 'Hedvig Letters Sans', sans-serif;
     font-family: 'Kanit', sans-serif;
     font-family: 'PT Serif', serif;
+    font-family: 'Roboto', sans-serif;
     scroll-behavior: smooth;
 }
 body{
@@ -18,7 +19,7 @@ body{
 .outer{
     width: 100%;
     height: auto;
-    background-color:aquamarine;
+    background-color:black;
 
 }
 .navigation{
@@ -363,10 +364,18 @@ pre{
   line-height: 20px;
   text-align: justify;
   padding: 5px 5px;
+
+  font-family: 'Times New Roman';
 }
 
 .card-title{
     color: orangered;
+    font-family: 'Cinzel', serif;
+    font-family: 'Hedvig Letters Sans', sans-serif;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Lato', sans-serif;
+    font-family: 'PT Serif', serif;
+    font-family: 'Roboto', sans-serif;
 }
 .btn-pro{
   width: max-content;
@@ -378,7 +387,7 @@ pre{
   transition: 0.3s ease;
   padding: 5px 8px;
   margin-left: 10%;
-  margin-top: -20%;
+  margin-top: -30%;
   color: white; 
 }
 .probtn-div{
@@ -415,7 +424,7 @@ pre{
   .contact .container {
 
     width: 100%;
-    height: 90%;
+    height: max-content;
     background: blueviolet;
     border-radius: 1.5rem;
     align-items: center;
@@ -616,28 +625,67 @@ pre{
     width: 100%;
     
     }
+   
+    .menu-div{
 
+      width: 100%;
+      height: 20px;
+      align-items: center;
+      position: fixed;
+
+      display: inline;
+      float: right;
+      z-index: 2;
+
+    }
+
+    .menu-btn {
+      margin-right: 5%;
+      margin-top: 5%;
+      float: right;
+      border: none;
+      width: max-content;
+       background-color: rgba(0, 0, 0, 0.712);
+    }
+    .menu-div .button i{
+      background-color: black;
+    }
+    .close-menu{
+     text-align: left;
+     width: 100%;
+     background-color:transparent ;
+     border: none;
+    }
+    .open-menu{
+      text-align: center;
+    }
     .outer{
         display: block;
     }
     .navigation{
-        width: 200px;
+        width: 100%;
         height: 100%;
+        margin-right: 0px;
         display: none;
+        transition: 0.3s ease-out;
         flex-wrap: wrap;
         justify-content:space-around;
         gap: 10px;
         align-items: center;
-        background-color: #000000a8;
+        background-color: #0e0d0da8;
 
     }
     .navitem{
-        width: 150px;
-        height: 20px;
+        width: 90%;
+        height: max-content;
+        align-items: center;
+        text-align: center;
+        transition-delay:5s  ;
+    }
 
-        background-color: aliceblue;
-
-
+    li a{
+      font-size: x-large;
+      font-weight: bold;
     }
     contant{
        width: 100%;
