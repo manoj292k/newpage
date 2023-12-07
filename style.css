@@ -660,7 +660,7 @@ pre{
       float: right;
       border: none;
       width: max-content;
-       background-color: rgba(0, 0, 0, 0.712);
+       background-color: rgba(0, 0, 0, 0.822);
     }
     .menu-div .button i{
       background-color: black;
@@ -670,6 +670,9 @@ pre{
      width: 100%;
      background-color:transparent ;
      border: none;
+    }
+    #Menubar, #closebtn{
+      display: inline;
     }
     .open-menu{
       text-align: center;
@@ -682,12 +685,12 @@ pre{
         height: 100%;
         margin-right: 0px;
         display: none;
-        transition: 0.3s ease-out;
+        transition: 3s ease-in;
         flex-wrap: wrap;
         justify-content:space-around;
         gap: 10px;
         align-items: center;
-        background-color: #0e0d0da8;
+        background-color: #000000a8;
 
     }
     .navitem{
@@ -695,7 +698,8 @@ pre{
         height: max-content;
         align-items: center;
         text-align: center;
-        transition-delay:5s  ;
+        transition-delay:5s ;
+         transition: 0.4s ease-in;
     }
 
     li a{
