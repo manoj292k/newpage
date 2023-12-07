@@ -37,7 +37,7 @@ li a{
     padding: 5px 10px;
     font-size: large;
 }
-#Menubar, #closebtn{
+.menu-div,.close-menu{
   display: none;
 }
 
