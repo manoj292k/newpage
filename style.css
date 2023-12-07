@@ -37,6 +37,9 @@ li a{
     padding: 5px 10px;
     font-size: large;
 }
+#Menubar, #closebtn{
+  display: none;
+}
 
 li :hover{
   background-color: rgb(255, 255, 255);
