@@ -26,3 +26,33 @@
         }
     }
 
+    // JavaScript for fade-in animation
+document.addEventListener("DOMContentLoaded", function () {
+    var fadeElements = document.querySelectorAll(".fade-in");
+  
+    function checkFade() {
+      fadeElements.forEach(function (element) {
+        if (isElementInViewport(element)) {
+          element.classList.add("fade-in-visible");
+        }
+      });
+    }
+  
+    function isElementInViewport(el) {
+      var rect = el.getBoundingClientRect();
+      return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+      );
+    }
+  
+    // Initial check on page load
+    checkFade();
+  
+    // Check on scroll
+    window.addEventListener("scroll", checkFade);
+  });
+  
+
