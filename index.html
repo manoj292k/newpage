@@ -15,13 +15,15 @@
 </head>
 
 <body id="Home">
+  <div class="menu-div" id="Menubar"><button onclick="openmenu()" class="menu-btn"><i class="fa-solid fa-bars fa-xl" style="color: #ffffff;"></i></button></div>
   <div class="outer">
-    <ul class="navigation">
-      <li class="navitem"><a class="navlink" href="#Home">Home</a></li>
-      <li class="navitem"><a class="navlink" href="#About">About</a></li>
-      <li class="navitem"><a class="navlink" href="#Education">Education</a></li>
-      <li class="navitem"><a class="navlink" href="#Project">Project</a></li>
-      <li class="navitem"><a class="navlink" href="#contact">Contact</a></li>
+    <ul class="navigation" id="navigation">
+       <button id="closebtn" onclick="closebtn()" class="close-menu"><i class="fa-regular fa-circle-xmark fa-2xl" style="color: #ffffff;"></i></button> 
+      <li  onclick="closebtn()" class="navitem"><a class="navlink" href="#Home">Home</a></li>
+      <li onclick="closebtn()" class="navitem"><a class="navlink" href="#About">About</a></li>
+      <li onclick="closebtn()" class="navitem"><a class="navlink" href="#Education">Education</a></li>
+      <li onclick="closebtn()" class="navitem"><a class="navlink" href="#Project">Project</a></li>
+      <li onclick="closebtn()" class="navitem"><a class="navlink" href="#contact">Contact</a></li>
     </ul>
   </div>
   <contant>
@@ -49,13 +51,13 @@
   </about>
   <study>
     <div class="ETitle" id="Education"><i class="fa-solid fa-graduation-cap" style="color: #d0ff00;"></i>   EDUCATION</div>
-<!-----------------------Education section----------------------------------------------->
+<!--------------------------------------------------------Education section----------------------------------------------->
 
     <Education class="Education">
       <div class="edu-one">
                   <div class="edu-txt">
                         <div class="icon-div"><i class="fa-solid fa-school fa-2xl" style="color: #252302;"></i><br> <br> 2015 - 2016</div>
-                        <div class="Ins-div"><span> Secondary School Leaving Certificate.</span><br>Kongu Matric Highrt Secondary School, P.Velur.<br>Percentage - 79</div>
+                        <div class="Ins-div"><span> Secondary School Leaving Certificate.</span><br>Kongu Matric Higher Secondary School, P.Velur.<br>Percentage - 79</div>
                   </div>
                   <div class="edu-txt">
                     <div class="icon-div"><i class="fa-solid fa-graduation-cap fa-2xl" style="color: #252302;"></i><br> <br> 2018 - 2020</div>
