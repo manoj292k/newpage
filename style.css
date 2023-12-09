@@ -4,11 +4,12 @@
     margin: 0px;
     padding: 0px;
     font-family: 'Cinzel', serif;
-    font-family: 'Hedvig Letters Sans', sans-serif;
     font-family: 'Kanit', sans-serif;
+    font-family: 'Lato', sans-serif;
     font-family: 'PT Serif', serif;
-    font-family: 'Roboto', sans-serif;
+
     scroll-behavior: smooth;
+    background-color: black;
 }
 /* CSS for fade-in animation */
 .fade-in {
@@ -26,7 +27,7 @@ body{
     
     margin: 0px;
     padding: 0px;
-    background: #ffffff;
+
 }
 .outer{
     width: 100%;
@@ -51,7 +52,6 @@ li a{
 }
 
 li :hover{
-  background-color: rgb(255, 255, 255);
   color: black;
   border-radius: 10px;
   box-shadow: 0px 0px 8px white;
@@ -77,9 +77,11 @@ contant{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+
 }
 
 .textone{
+    background-color: transparent;
     width: 45%;
     height: 100vh;
     display: flex;
@@ -95,28 +97,35 @@ contant{
 }
 pre{
     overflow: hidden;
+    width: max-content;
+    background-color: transparent;
 }
 pre span{
-    color: red;
+    color: #01B170;
+    background-color: transparent;
 }
 .homebtnn{
     position: absolute;
     top: 70%;
     left: 10%;
-    width: 45%;
+    width: max-content;
     align-items: center;
     display: flex;
     gap: 20px;
+    background-color: transparent;
 }
 .homebtnn button{
     cursor: pointer;
     border-radius: 5px;
+    background-color: #01B170;
     padding: 5px 20px;
-    background: #2506ad;
-    box-shadow: 0px 5px 10px rgba(48, 68, 247, 0.6);
+    box-shadow: 0px 0px 20px #01B170;
     transition: 0.3s ease;
+    border: none;
 }
-
+.homebtnn button:hover{
+  background-color: black;
+}
 pre{
     transform: translate(-20%,20%);
 
@@ -127,7 +136,11 @@ pre{
     display: flex;
     justify-content: center;
     animation: moveUpDown 4s ease-in-out infinite;
+    background-color: transparent;
 
+}
+img{
+  background-color: transparent;
 }
 
 @keyframes moveUpDown {
@@ -140,8 +153,7 @@ pre{
   }
 
   .Title{
-    color: red;
-    background: #fff;
+    color: white;
     font-weight: bold;
     font-size: 45px;
     padding: 50px 0px;
@@ -157,7 +169,6 @@ pre{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    background-color: #fff;
     
   }
   .abt-img{
@@ -166,32 +177,28 @@ pre{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    border: 1px solid white;
     
    }
    .abt-img img{
-    width: 100%;
+    width: 80%;
    }
 
   .abt-txt{
-    color: rgb(0, 0, 39);
-    background-color: #ffff;
+    color: white;
+    background-color: #01B170;
     display: flex;
     width: 40%;
-    height: 70%;
+    height: max-content;
+    padding: 50px;
     font-size: large;
     align-items: center;
-    border-radius: 10px;
+    border-radius: 50px 0px;
     justify-content: space-around;
+    box-shadow: 0px 0px 10px  #01B170;
 
-    box-shadow: 4px 4px 6px  rgba(255, 255, 255, 0.486);
-    font-family: 'Hedvig Letters Sans', sans-serif;
-    font-family: 'Kanit', sans-serif;
-    font-family: 'PT Serif', serif;
   }
   .ETitle{
     color: white;
-    background: blueviolet;
     font-size: 45px;
     padding: 50px 0px;
     text-align: center;
@@ -202,26 +209,26 @@ pre{
   }
   .Education{
     width: 100%;
-    height: 100vh;
+    height: max-content;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    background-color: blueviolet;
     align-items: center;
     
   }
   .edu-one{
     width: 60%;
-    height: 80%;
+    height: max-content;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     border-radius: 20px;
     align-items: center;
+    padding-bottom: 50px;
   }
   .edu-two{
     width: 30%;
-    height: 80%;
+    height: max-content;
     overflow: hidden;
     align-items: center;
 
@@ -234,15 +241,15 @@ pre{
 .edu-txt{
   width: 100%;
   height: auto;
-  background-color: rgb(218, 218, 218);
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
   border-radius: 10px;
-  padding: 10px 0px;
+  padding: 30px 0px;
   color: white;
   font-weight: bold;
+
 }
 .edu-txt:hover,.skillsname :hover{
   box-shadow: 0px 5px 15px rgb(0, 0, 0);
@@ -251,43 +258,54 @@ pre{
 }
 .icon-div{
   width: 10%;
-  height: 30%;
+  height: max-content;
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
   align-items: center;
   text-align: center;
-  color: red;
+  color: rgb(0, 0, 0);
 
+}
+.icon-div:hover{
+  background-color: rgb(184, 177, 177);
 }
 .Ins-div span{
   font-size: x-large;
-  color: rgb(15, 165, 15);
+  font-weight: bold;
+  background-color: transparent;
+  color: white;
 }
 .Ins-div{
   width: 80%;
-  height: 30%;
-  padding: 8px;
-  border-radius: 10px;
-  background-color: #fff;
+  height: max-content;
+  font-weight: lighter;
+  padding: 15px;
+  border-radius: 20px ;
   color: rgb(2, 2, 51);
+  background-color: #01B170;
+  box-shadow: 0px 0px 10px #01B170;
 
+}
+.Ins-div:hover{
+  background-color: #08704a;
+  transition: 0.5s;
 }
 
 .skill-Title{
-    color:rgb(255, 0, 0);
-    background-color: #fff;
+    color:white;
+    background-color: #01B170;
     font-size: 45px;
     font-weight: bold;
     padding: 50px 0px;
     text-align: center;
-    font-family: 'Cinzel', serif;
-    font-family: 'Hedvig Letters Sans', sans-serif;
-    font-family: 'Kanit', sans-serif;
-    font-family: 'PT Serif', serif;
+
 
 }
 
   .Outerarea{
-    background-color: #fff;
     width: 100%;
+    background-color: #01B170;
     height: auto;
     display: flex;
     justify-content: center;
@@ -295,6 +313,7 @@ pre{
   }
 .skillsname{
     display: flex;
+    background-color: #01B170;
     width: 20%;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -310,19 +329,29 @@ pre{
     color: #fff;
     align-items: center;
     border-radius: 20px;
-    background: blueviolet;
+    background-color: black;
+    box-shadow: 0px 0px 10px black;
+
 }
+
+
+.skills-txt:hover{
+  background-color: #08704a;
+}
+
 .skill-img{
     padding: 50px 0px;
     width: 35%;
+    height: max-content;
     align-items: center;
+    background-color: #01B170;
 }
 .skill-img img{
   margin-left: 10%;
 }
 .skills-notes{
     width: 80%;
-
+    background-color: #01B170;
     color: rgb(0, 0, 0);
     text-align: center;
     font-size: x-large;
@@ -330,36 +359,53 @@ pre{
 }
 .btn-link{
     color: #fff;
+    text-decoration: none;
+    background-color: black;
     border: none;
     outline: none;
     font-size: x-large;
     cursor: pointer;
     border-radius: 5px;
     padding: 5px 20px;
-    background: rgb(2, 2, 75);
-    box-shadow: 0px 5px 10px rgba(48, 68, 247, 0.6);
+    box-shadow: 0px 0px 10px black;
     transition: 0.3s ease;
+}
+.btn-link:hover{
+  background-color: #08704a;
+  color: black;
+}
+i{
+  background-color: transparent;
+}
+button{
+  text-decoration: none;
 }
 
 .project-out{
     width: 100%;
-    height: 100%;
+    height: max-content;
     display: flex;
-    gap: 20px;
-    background-color: rgb(2, 2, 75);
     align-items: center;
     flex-wrap: wrap;
+
     justify-content: space-around;
 }
 .cards{
   width: 20%;
+  padding-bottom: 10px;
   height: max-content;
-  justify-content: space-around;
-  border: 2px solid black;
-  background-color: #e5ecfb;
+  justify-content: space-evenly;
+  background-color: #01B170;
+
   border-radius: 10px;
 
+
 }
+.cards:hover{
+  background-color: #08704a;
+  box-shadow: 0px 0px 20px #08704a;
+}
+
 .pro-btn{
   padding: 5px 10px;
   font-size: x-large;
@@ -374,41 +420,36 @@ pre{
 
 }
 .card-text{
-  padding: 0px 0px;
+  color: black;
   font-size: medium;
-  line-height: 20px;
   text-align: justify;
-  padding: 5px 5px;
-
-  font-family: 'Times New Roman';
+  display: flex;
+  justify-content: space-around;
+  padding: 5px 15px;
+  background-color:transparent;
 }
 
 .card-title{
-    color: orangered;
-    font-family: 'Cinzel', serif;
-    font-family: 'Hedvig Letters Sans', sans-serif;
-    font-family: 'Kanit', sans-serif;
-    font-family: 'Lato', sans-serif;
-    font-family: 'PT Serif', serif;
-    font-family: 'Roboto', sans-serif;
+    color: white;
+    background-color: transparent;
+
 }
 .btn-pro{
   width: max-content;
   cursor: pointer;
   text-decoration: none;
-  border-radius: 5px;
-  background: #2506ad;
-  box-shadow: 0px 5px 10px rgba(48, 68, 247, 0.6);
+  border-radius: 30px;
+  box-shadow: 0px 0px 10px black;
   transition: 0.3s ease;
   padding: 5px 8px;
   margin-left: 10%;
-  margin-top: -30%;
+
   color: white; 
 }
 .probtn-div{
   width: 40%;
-  padding: 20px 0px;
-  height: auto;
+  padding-top: 50px ;
+  height: max-content;
   text-align: center;
 }
 .btn-primary{
@@ -423,15 +464,14 @@ pre{
   margin-left: 25px;
 }
 .contact {
-    background: white;
-    height: 100vh;
+    height: max-content;
     width: 100%;
     overflow: hidden;
   }
 
   .heading{
     text-align: center;
-    color: rgb(1, 1, 97);
+    color: greenyellow;
     padding: 30xp 0px;
     font-weight: bold;
     font-size: 30px;
@@ -440,10 +480,9 @@ pre{
 
     width: 100%;
     height: max-content;
-    background: blueviolet;
     border-radius: 1.5rem;
     align-items: center;
-    box-shadow: 0 0px 10px rgba(248, 236, 236, 0.534);
+    box-shadow: 0 0px 10px rgb(53, 51, 51);
 
  
   }
@@ -452,20 +491,24 @@ pre{
     align-items: center;
     justify-content: space-between;
     padding: 2.5rem 2.5rem;
+    background-color: transparent;
   }
   .contact .content .image-box {
     max-width: 60%;
     margin-left: 4rem;
+    background-color: transparent;
   }
   .contact .content .image-box img {
     width: 100%;
     height: 30rem;
     position: relative;
     overflow: hidden;
+    background-color: transparent;
   }
   .contact .content form {
     width: 45%;
     margin-right: 3.5rem;
+    
   }
   form .form-group {
     display: flex;
@@ -478,6 +521,7 @@ pre{
     position: relative;
     margin: 1rem;
     width: 100%;
+    background-color: transparent;
   }
   form i {
     position: absolute;
@@ -507,7 +551,6 @@ pre{
   .field input:focus,
   .message textarea:focus {
     padding-left: 47px;
-    border: 2px solid rgb(115, 3, 167);
   }
   .field input:focus ~ i,
   .message textarea:focus ~ i {
@@ -537,6 +580,7 @@ pre{
     display: flex;
     justify-content: center;
     flex-direction: row-reverse;
+    background-color: black;
   }
   .button-area button {
     color: #fff;
@@ -546,12 +590,13 @@ pre{
     cursor: pointer;
     border-radius: 5px;
     padding: 5px 20px;
-    background: #2506ad;
-    box-shadow: 0px 5px 10px rgba(48, 68, 247, 0.6);
+    background: black;
+    box-shadow: 0px 5px 10px black;
     transition: 0.3s ease;
   }
   .button-area button:hover {
-    background: #421cecf5;
+    background: #01B170;
+    color: black;
   }
   .button-area span {
     font-size: 17px;
@@ -572,7 +617,6 @@ pre{
   .socilmedia{
     width: 100%;
     height: 30vh;
-    background-color: white;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -585,17 +629,20 @@ pre{
   .scl-one{
     width: 35%;
     height: auto;
-    background-color:white;
     border-radius: 7px;
-  justify-content: space-around;
-  text-align: center;
+    justify-content: space-around;
+    text-align: center;
     display: flex;
+    color: white;
 
+  }
+  a{
+    text-decoration: none;
+    color: white;
   }
   .scl-two{
     width: 40%;
     height: 30%;
-    background-color:white;
     align-items: center;
     border-radius: 7px;
     justify-content: space-around;
@@ -607,12 +654,11 @@ pre{
    border-radius: 50%;
   }
   .sl-link:hover{
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.616) ;
+    box-shadow: 0px 0px 20px #08704a;
 
   }
   .follow{
-    background: #fcfcfc;
-    color: red;
+    color: white;
     text-align: center;
     font: bold;
     font-size: x-large;
@@ -622,8 +668,7 @@ pre{
  .final{
     width: 100%;
     text-align: center;
-    color: rgb(0, 0, 0);
-    background-color: rgb(255, 255, 255);
+    color: white ;
  }
 
 
@@ -636,31 +681,31 @@ pre{
 
 @media only screen and (max-width : 700px) {
     
-    *{
+   html{
     width: 100%;
-    
-    }
+   }
    
     .menu-div{
 
       width: 100%;
-      height: 20px;
+      height: max-content;
       align-items: center;
       position: fixed;
-
       display: inline;
       float: right;
       z-index: 2;
+      background: transparent;
 
     }
 
     .menu-btn {
-      margin-right: 5%;
-      margin-top: 5%;
+      margin-right: 10%;
+      margin-top: 2%;
       float: right;
       border: none;
       width: max-content;
-       background-color: rgba(0, 0, 0, 0.822);
+
+       background-color: transparent;
     }
     .menu-div .button i{
       background-color: black;
@@ -690,7 +735,7 @@ pre{
         justify-content:space-around;
         gap: 10px;
         align-items: center;
-        background-color: #000000a8;
+        background-color: #000000;
 
     }
     .navitem{
@@ -713,37 +758,35 @@ pre{
        flex-direction: column-reverse;
        justify-content: space-evenly;
        align-items: center;
-      
-}
-.homebtnn button{
-  cursor: pointer;
-  border-radius: 5px;
-  padding: 5px 20px;
-  background: #2506ad;
-  box-shadow: 0px 5px 10px rgba(48, 68, 247, 0.6);
-  transition: 0.3s ease;
-  
-}
+            
+      }
+      .homebtnn button{
+        cursor: pointer;
+        border-radius: 5px;
+        padding: 5px 20px;
+        transition: 0.3s ease;  
+      }
 
 
       .homebtnn{
         margin-top: 10%;
       }
     .textone{
-      margin-top: 0%;
-        width: 100%;
+        margin-top: 0%;
+        width: max-content;
         height: max-content;
         flex-wrap: wrap;
         justify-content: space-around;
         font-size:35px;
         font-weight: bold;
-        background: transparent;
+        background:transparent;
         color: white;
+
 
     } 
     .homeimg{
         position: absolute;
-        width: 100%;
+        width: max-content;
         height: max-content;
         margin-top: -50%;
         animation: moveUpDown 4s ease-in-out infinite;
@@ -771,31 +814,21 @@ pre{
 .abt-img img{
     width: 100%;
 }
-.Title{
-  width: 100%;
-  color: black;
-  padding: none;
-}
+
   .abt-txt{
     color: rgb(2, 2, 51);
     width: 80%;
     font-size: large;
     padding: 30px 10px;
   }
-  .ETitle{
-    width: 100%;
-    color: white;
-    padding: none;
-    font-weight: bold;
-    background-color: #100057;
-  }
+
   .Education{
     width: 100%;
     height: auto;
     display: flex;
     flex-direction: column-reverse;
     justify-content: space-around;
-    background-color: #100057;
+
   }
 .edu-one{
   width:100% ;
@@ -845,9 +878,7 @@ pre{
     padding-right:10px ;
     font-size: medium;
     font-weight: normal;
-    border-radius: 0px;
-    background-color: rgb(0, 0, 80);
-    color: rgb(255, 255, 255);
+    transition: 3s ease-out;
     text-align: center;
     border-radius: 6px;
   }
@@ -868,22 +899,20 @@ pre{
   .btn-link{
     cursor: pointer;
     text-decoration: none;
-    border-radius: 5px;
-    padding: 10px 10px;
-    background: #2506ad;
-    box-shadow: 0px 5px 10px rgba(48, 68, 247, 0.6);
+    border-radius: 30px;
+    padding: 10px 20px ;
     transition: 0.3s ease;
   }
   .pro-box{
     width: 100%;
     height: max-content;
     transition: 0.3s ease;
-    box-shadow: 0px 5px 10px rgba(247, 48, 48, 0.6);
+
   }
   .cards{
-    width: 80%;
+    width: 70%;
     height: max-content;
-    padding: 20px 0px;
+    border-radius: 10px;
   }
   .probtn-div{
     padding: 30px 0px;
@@ -893,12 +922,18 @@ pre{
     cursor: pointer;
     text-decoration: none;
     border-radius: 5px;
-    background: #2506ad;
-    box-shadow: 0px 5px 10px rgba(48, 68, 247, 0.6);
+    background: black;
+    box-shadow: 0px 5px 10px black;
     transition: 0.3s ease;
     padding: 6px 10px;
     margin: 10%;
     color: white; 
+}
+.btn-pro i{
+  width: 20px;
+}
+.project-out{
+  gap: 30px;
 }
 
   .contact {
@@ -907,6 +942,7 @@ pre{
     align-items: center;
 
   }
+ 
   .contact .container {
     width: 90%;
     height: max-content;
@@ -914,7 +950,7 @@ pre{
     align-items: center;
     display: flex;
     justify-content: space-around;
-    background-color: #100057;
+
   }
   .contact .container .content {
     padding: 18px 12px;
@@ -939,7 +975,12 @@ pre{
   }
   .button-area{
     padding: none;
-    background-color: #e5ecfb;
+
+  }
+  .button-area button{
+    background-color: #01B170;
+    box-shadow: 0px 0px 8px #01B170;
+
   }
   
 .socilmedia{
