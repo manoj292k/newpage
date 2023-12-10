@@ -703,7 +703,7 @@ button{
 
 @media only screen and (max-width : 700px) {
    html{
-    width: 110%;
+    width: 130%;
     margin: 0px;
     padding: 0px;
    }
