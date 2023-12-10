@@ -161,7 +161,7 @@ img{
   }
   .about{
     width: 100%;
-    height: 100vh;
+    height: max-content;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -249,7 +249,7 @@ img{
   font-weight: bold;
 
 }
-.edu-txt:hover,.skillsname :hover{
+.edu-txt:hover{
   box-shadow: 0px 5px 15px rgb(0, 0, 0);
   transition: ease-out 0.4s;
 
@@ -286,7 +286,7 @@ img{
   box-shadow: 0px 0px 10px #01B170;
 
 }
-.Ins-div:hover{
+.Ins-div:hover,.abt-txt:hover{
   background-color: #08704a;
   transition: 0.5s;
 }
@@ -483,8 +483,13 @@ button{
     border-radius: 1.5rem;
     align-items: center;
     box-shadow: 0 0px 10px rgb(53, 51, 51);
+  
 
  
+  }
+  .content{
+    padding-bottom: 10px;
+
   }
   .contact .container .content {
     display: flex;
@@ -492,6 +497,7 @@ button{
     justify-content: space-between;
     padding: 2.5rem 2.5rem;
     background-color: transparent;
+  
   }
   .contact .content .image-box {
     max-width: 60%;
@@ -676,12 +682,16 @@ button{
  .end-button{
   padding: 0px 10px;
   background-color: #01B170;
-  border-radius: 50%;
-  position: absolute;
-  right: 7%;
+  border-radius: 10px;
+  float: right;
   color: white;
-  font-size: xx-large;
+  font-size: x-large;
   z-index: 2;
+  text-decoration: none;
+}
+.end-button:hover{
+  background-color: #000000;
+  color: #01B170;
 }
 
 
@@ -692,28 +702,26 @@ button{
 
 
 @media only screen and (max-width : 700px) {
-   *{
-    width: 100%;
+   html{
+    width: 110%;
     margin: 0px;
     padding: 0px;
    }
   
    
     .menu-div{
-
-      
+      width: 100%;
       height: max-content;
-      align-items: center;
+      align-items: right;
       position: fixed;
       display: inline;
       float: right;
       z-index: 2;
       background: transparent;
-
     }
 
     .menu-btn {
-      margin-right: 15%;
+      margin-right: 10%;
       margin-top: 2%;
       float: right;
       border: none;
@@ -746,9 +754,10 @@ button{
         transition: 3s ease-in;
         flex-wrap: wrap;
         justify-content:space-around;
-        gap: 10px;
+        gap: 0px;
         align-items: center;
         background-color: #000000;
+        position: fixed;
 
     }
     .navitem{
@@ -1021,6 +1030,14 @@ button{
 }
 .sl-link{
   width: 10%;
+}
+.end-button{
+  padding: 0px 20px;
+  background-color: #01B170;
+  border-radius: 10px;
+  color: white;
+  font-size: large;
+  align-items: center;
 }
 
 }
