@@ -56,3 +56,29 @@ document.addEventListener("DOMContentLoaded", function () {
   });
   
 
+//google sheet form
+
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbyiB0FU754ADpvbxtgfVT6Xq8bIaAFUWNqpIKW_d3Xej3bYYVcYD1tnFKkH4CVWs9POUg/exec'
+  const form = document.forms['submit-to-google-sheet']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+  })
+
+  //window alart
+        function number(){
+          var submit = document.getElementById("com").value;
+      
+          if (submit.length >=  2) {
+          window.alert("Thank you for your comment :)");
+          console.log("success",submit);
+          } 
+          else {
+          window.alert("Invalid");
+          console.log("failed",submit);
+          }
+      }
+
